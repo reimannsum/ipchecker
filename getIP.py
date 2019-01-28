@@ -3,11 +3,11 @@ import smtplib, ssl, sys
 
 port = 465  # For SSL
 smtp_server = "smtp.gmail.com"
-sender_email = "" + sys.args[1]  # Enter your address
-receiver_email = "" + sys.args[2]  # Enter receiver address
-password = '' + sys.args[0]
+sender_email = "" + sys.args[2]  # Enter your address
+receiver_email = "" + sys.args[3]  # Enter receiver address
+password = '' + sys.args[1]
 password = password.strip()
-device_name = '' + sys.args[3] # The name of the system reporting
+device_name = '' + sys.args[4] # The name of the system reporting
 
 
 def print_error():
